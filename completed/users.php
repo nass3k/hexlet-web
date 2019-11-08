@@ -5,7 +5,7 @@ require __DIR__ . '/../vendor/autoload.php';
 use Slim\Factory\AppFactory;
 use DI\Container;
 
-var_dump($_SERVER['PHP_SELF']);
+
 
 $container = new Container();
 $container->set('renderer', function () {
