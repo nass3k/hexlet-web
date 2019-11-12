@@ -1,0 +1,16 @@
+<a href="/">Назад</a>
+<h1>Все пользователи</h1>
+<table>
+    <?php foreach ($users as $user): ?>
+        <tr>
+            <td>
+                <?=$user['id'] ?>
+            </td>
+            <td>
+                <a href="/users/<?=$user['id'] ?>">
+                <?=$user['firstName'] ?>
+                </a>
+            </td>
+        </tr>
+    <?php endforeach ?>
+</table>

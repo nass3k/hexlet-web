@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/App/src" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/fig/http-message-util" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/jeremeamia/superclosure" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/nikic/fast-route" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/php-di/invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/php-di/php-di" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/php-di/phpdoc-reader" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/psr/http-server-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/psr/http-server-middleware" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/slim/http" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/slim/php-view" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/slim/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/slim/slim" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/symfony/polyfill-php56" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/symfony/polyfill-util" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/App/vendor/tightenco/collect" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

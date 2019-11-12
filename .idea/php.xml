@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/App/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/App/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/App/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/App/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/App/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/App/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/App/vendor/composer" />
+      <path value="$PROJECT_DIR$/App/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/App/vendor/tightenco/collect" />
+      <path value="$PROJECT_DIR$/App/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/App/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/App/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/App/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/App/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/App/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/App/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/App/vendor/slim/http" />
+      <path value="$PROJECT_DIR$/App/vendor/slim/psr7" />
+      <path value="$PROJECT_DIR$/App/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/App/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/App/vendor/php-di/phpdoc-reader" />
+      <path value="$PROJECT_DIR$/App/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/App/vendor/php-di/php-di" />
+      <path value="$PROJECT_DIR$/App/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/App/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/App/vendor/jeremeamia/superclosure" />
+      <path value="$PROJECT_DIR$/App/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/App/vendor/slim/php-view" />
+    </include_path>
+  </component>
+</project>
