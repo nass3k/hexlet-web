@@ -30,6 +30,7 @@
       <path value="$PROJECT_DIR$/App/vendor/jeremeamia/superclosure" />
       <path value="$PROJECT_DIR$/App/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/App/vendor/slim/php-view" />
+      <path value="$PROJECT_DIR$/App/vendor/danielstjules/stringy" />
     </include_path>
   </component>
 </project>

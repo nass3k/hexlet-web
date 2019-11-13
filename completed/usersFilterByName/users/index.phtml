@@ -1,0 +1,18 @@
+<a href="/">Назад</a>
+
+<!-- BEGIN (write your solution here) -->
+<form action="/users" method="get">
+    <input type="search" name="term" value="<?= htmlspecialchars($term) ?>" />
+    <input type="submit" value="Search" />
+</form>
+
+<table>
+    <?php foreach ($users as $user): ?>
+    <tr>
+        <td><?= htmlspecialchars($user['firstName']) ?></td>
+        <td><?= htmlspecialchars($user['lastName']) ?></td>
+        <td><?= htmlspecialchars($user['email']) ?></td>
+    </tr>
+    <?php endforeach ?>
+</table>
+<!-- END -->

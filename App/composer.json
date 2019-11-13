@@ -10,6 +10,7 @@
         "tightenco/collect": "^6.4",
         "fzaninotto/faker": "^1.8",
         "slim/php-view": "^2.2",
-        "php-di/php-di": "^6.0"
+        "php-di/php-di": "^6.0",
+        "danielstjules/stringy": "^3.1"
     }
 }

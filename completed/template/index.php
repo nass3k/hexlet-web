@@ -17,14 +17,14 @@ $app = AppFactory::create();
 $app->addErrorMiddleware(true, true, true);
 
 $app->get('/', function ($request, $response) {
-    return $this->get('renderer')->render($response, 'index.phtml');
+    return $this->get('renderer')->render($response, 'users.phtml');
 });
 
 $app->get('/users', function ($request, $response) use ($users) {
     $params = [
         'users' => $users
     ];
-    return $this->get('renderer')->render($response, 'users/index.phtml', $params);
+    return $this->get('renderer')->render($response, 'users/users.phtml', $params);
 });
 
 $app->get('/users/{id}', function ($request, $response, $args) use ($users) {
