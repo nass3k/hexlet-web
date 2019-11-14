@@ -22,17 +22,17 @@ $app->get('/', function ($request, $response) {
     return $this->get('render')->render($response, 'index.phtml');
 });
 
-$app->get('/users', function ($request, $response) use ($users) {
+$app->get('/courses', function ($request, $response) use ($users) {
     $term = $request->getQueryParam('term');
     if (!empty($term)) {
         $users = array_filter($users, function ($user) use ($term) {
             return s($user['firstName'])->startsWith($term, false);
         });
     }
-    $params = ['users' => $users,
+    $params = ['courses' => $users,
         'term' => $term
     ];
-    return $this->get('render')->render($response, 'users/index.phtml', $params);
+    return $this->get('render')->render($response, 'courses/index.phtml', $params);
 });
 
 $app->run();

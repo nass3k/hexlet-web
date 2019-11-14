@@ -17,22 +17,22 @@ $app = AppFactory::create();
 $app->addErrorMiddleware(true, true, true);
 
 $app->get('/', function ($request, $response) {
-    return $this->get('renderer')->render($response, 'users.phtml');
+    return $this->get('renderer')->render($response, 'courses.phtml');
 });
 
-$app->get('/users', function ($request, $response) use ($users) {
+$app->get('/courses', function ($request, $response) use ($users) {
     $params = [
-        'users' => $users
+        'courses' => $users
     ];
-    return $this->get('renderer')->render($response, 'users/users.phtml', $params);
+    return $this->get('renderer')->render($response, 'courses/courses.phtml', $params);
 });
 
-$app->get('/users/{id}', function ($request, $response, $args) use ($users) {
+$app->get('/courses/{id}', function ($request, $response, $args) use ($users) {
     $user = collect($users)->firstWhere('id', $args['id']);
     $params = [
         'id' => $args['id'],
         'user' => $user
     ];
-    return $this->get('renderer')->render($response, 'users/show.phtml', $params);
+    return $this->get('renderer')->render($response, 'courses/show.phtml', $params);
 });
 $app->run();

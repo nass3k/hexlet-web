@@ -17,7 +17,7 @@ AppFactory::setContainer($container);
 $app = AppFactory::create();
 $app->addErrorMiddleware(true, true, true);
 
-$app->get('/users', function ($request, $response) use ($users){
+$app->get('/courses', function ($request, $response) use ($users){
     $term = $request->getQueryParam('term');
     if ($term !== null) {
         $users = array_filter($users, function ($user) use ($term) {
@@ -26,10 +26,10 @@ $app->get('/users', function ($request, $response) use ($users){
     }
     $params = [
         'term' => $term,
-        'users' => $users
+        'courses' => $users
         ];
 
-    return $this->get('renderer')->render($response, '/users.phtml', $params);
+    return $this->get('renderer')->render($response, '/courses.phtml', $params);
 });
 
 $app->run();
