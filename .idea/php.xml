@@ -31,6 +31,7 @@
       <path value="$PROJECT_DIR$/App/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/App/vendor/slim/php-view" />
       <path value="$PROJECT_DIR$/App/vendor/danielstjules/stringy" />
+      <path value="$PROJECT_DIR$/App/vendor/slim/flash" />
     </include_path>
   </component>
 </project>

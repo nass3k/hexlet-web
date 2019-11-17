@@ -1,0 +1,10 @@
+<form action="/courses" method="post">
+    <input type="submit" value="Create Course">
+</form>
+
+<?php if (isset($messages['success'])) {
+    foreach ($messages['success'] as $message): ?>
+        <div><?= $message ?></div>
+    <?php endforeach;
+    }
+    ?>
