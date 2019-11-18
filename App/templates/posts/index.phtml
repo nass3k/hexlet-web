@@ -1,0 +1,10 @@
+<table>
+<?php foreach ($posts as $post => $p): ?>
+    <tr>
+        <td><?= $p['id'] ?></td>
+        <td><a href="posts/show/<?= $post ?>"><?= $p['name'] ?></a></td>
+        <td><?= $p['body'] ?></td>
+        <td><?= $p['slug'] ?></td>
+    </tr>
+<?php endforeach ?>
+</table>
