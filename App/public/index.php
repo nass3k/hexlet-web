@@ -21,10 +21,19 @@ $app->get('/', function ($request, $response) {
 });
 
 $app->get('/posts', function ($request, $response) use ($repo) {
+    $per = 5;
+    $page = $request->getQueryParam('page', 1);
+    $offset = ($page - 1) * $per;
+
     $posts = $repo->all();
-    $params = ['posts' => $posts];
+
+    $sliceOfPosts = array_slice($posts, $offset, $per);
+    $params = [
+        'page' => $page,
+        'posts' => $sliceOfPosts
+    ];
     return $this->get('renderer')->render($response, 'posts/index.phtml', $params);
-});
+})->setName('posts');
 
 $app->get('/posts/show/{id}', function ($request, $response, $args) use ($repo) {
     $posts = $repo->all();

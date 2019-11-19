@@ -1,10 +1,20 @@
+
+    <h1>Список публикаций</h1>
 <table>
-<?php foreach ($posts as $post => $p): ?>
-    <tr>
-        <td><?= $p['id'] ?></td>
-        <td><a href="posts/show/<?= $post ?>"><?= $p['name'] ?></a></td>
-        <td><?= $p['body'] ?></td>
-        <td><?= $p['slug'] ?></td>
-    </tr>
-<?php endforeach ?>
+    <?php foreach ($posts as $post => $p): ?>
+        <tr>
+            <td>
+                <a href="/posts/<?= $post['slug'] ?>"><?= htmlspecialchars(['name']) ?></a>
+                <?php var_dump($posts) ?>
+            </td>
+        </tr>
+    <?php endforeach ?>
 </table>
+<div>
+    <span>
+    <a href="?page=<?= $page < 2 ? 1 : $page - 1 ?>">назад</a>
+    </span>
+        <span>
+    <a href="?page=<?= $page + 1 ?>">вперед</a>
+    </span>
+</div>
