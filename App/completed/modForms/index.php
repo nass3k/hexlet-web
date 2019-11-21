@@ -5,7 +5,7 @@ require __DIR__ . '/../vendor/autoload.php';
 use Slim\Factory\AppFactory;
 use DI\Container;
 
-$repo = new App\Repository();
+$repo = new App\SchoolRepository();
 
 $container = new Container();
 $container->set('renderer', function () {

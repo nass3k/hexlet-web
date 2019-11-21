@@ -1,0 +1,24 @@
+<a href="/posts">Посты</a>
+
+<form action="/posts" method="post">
+    <div>
+        <label>
+            Название *
+            <input type="text" name="post[name]" value="<?= htmlspecialchars($post['name'] ?? ''); ?>">
+        </label>
+        <?php if (isset($errors['name'])): ?>
+            <div><?= $errors['name'] ?></div>
+        <?php endif ?>
+    </div>
+    <div>
+            Сообщение *
+        <div>
+            <textarea name="post[body]" cols="30" rows="5"><?= htmlspecialchars($post['body'] ?? ''); ?></textarea>
+        </div>
+        <?php if (isset($errors['body'])): ?>
+            <div><?= $errors['body'] ?></div>
+        <?php endif ?>
+    </div>
+    <input type="submit" value="Create">
+</form>
+
