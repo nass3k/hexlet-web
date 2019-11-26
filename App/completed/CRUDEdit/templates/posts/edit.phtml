@@ -1,0 +1,8 @@
+<a href="/posts">Посты</a>
+<div>Имя: <?= $post['name'] ?></div>
+<div>Сообщение: <?= $post['body'] ?></div>
+<form action="/posts/<?= htmlspecialchars($post['id']) ?>" method="post">
+    <input type="hidden" name="_METHOD" value="PATCH">
+    <?php require '_form.phtml' ?>
+    <input type="submit" value="Update">
+</form>
