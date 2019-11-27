@@ -1,0 +1,28 @@
+<form action="/cart-items" method="post">
+    <input type="hidden" name="item[id]" value="1">
+    <input type="hidden" name="item[name]" value="One">
+    One
+    <input type="submit" value="Add">
+</form>
+
+<form action="/cart-items" method="post">
+    <input type="hidden" name="item[id]" value="2">
+    <input type="hidden" name="item[name]" value="Two">
+    Two
+    <input type="submit" value="Add">
+</form>
+
+<form action="/cart-items" method="post">
+    <input type="hidden" name="_METHOD" value="DELETE">
+    <input type="submit" value="Clean">
+</form>
+<?php var_dump($_COOKIE) ?>
+<?php if (count($cart) == 0) : ?>
+    <div>Cart is empty</div>
+<?php else : ?>
+    <?php foreach ($cart as $item) : ?>
+        <div>
+            <?= htmlspecialchars($item['name']) ?>: <?= htmlspecialchars($item['count']) ?>
+        </div>
+    <?php endforeach ?>
+<?php endif ?>
