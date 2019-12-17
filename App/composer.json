@@ -1,6 +1,9 @@
 {
     "autoload": {
-        "psr-4": {"App\\": "src/"}
+        "psr-4": {"App\\": "src/"},
+        "files": [
+            "src/HTML.php"
+        ]
     },
     "require": {
         "slim/slim": "^4.0",

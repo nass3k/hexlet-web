@@ -13,11 +13,12 @@ function getLinks($tags)
     $filteredTags = array_filter($tags, function ($tag) use ($mapping) {
         return in_array($tag['name'], array_keys($mapping));
     });
-
+    print_r($filteredTags);
     $paths = array_map(function ($tag) use ($mapping) {
         $attributeName = $mapping[$tag['name']];
         return $tag[$attributeName];
     }, $filteredTags);
+    print_r($paths);
     return array_values($paths);
 }
 
